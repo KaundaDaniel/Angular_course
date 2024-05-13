@@ -21,7 +21,9 @@ export class MyFirstCompComponent {
   isSubmitted:boolean=false;
 
   messages:Array<any>=[]
-  constructor( private service: MyFirstServiceService){
+
+  constructor(private service: MyFirstServiceService){
+
     this.messages= this.service.getAllMessage();
     this.isSubmitted= this.messages.length>0;
 
@@ -39,7 +41,6 @@ export class MyFirstCompComponent {
   }
 );
 console.log(this.messages);
-
 
 this.email='';
 this.nome='';

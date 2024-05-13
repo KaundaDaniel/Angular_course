@@ -7,13 +7,17 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { MyFirstCompComponent } from './my-first-comp/my-first-comp.component';
 import { FormsModule } from '@angular/forms';
 import { MessageDetailsComponent } from './message-details/message-details.component';
+import { MenuComponent } from './menu/menu.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     MyFirstCompComponent,
-    MessageDetailsComponent
+    MessageDetailsComponent,
+    MenuComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
